@@ -21,7 +21,7 @@ class LazyJSON:
 class SafeJSON(LazyJSON):
     """
     A wrapper for json-encoded strings which allows them to be output within a
-    JSON document by the SafeJSONPassthroughEncoder without decoding first.
+    JSON document by the JSONPassthroughEncoder without decoding first.
 
     Blindly wrapping untrusted JSON strings using this could result in JSON
     injection attacks. Please be careful.
@@ -36,7 +36,7 @@ class SafeJSON(LazyJSON):
 class SafeJSONFile():
     """
     A wrapper for json-encoded files which allows them to be output within a
-    JSON document by the SafeJSONPassthroughEncoder without decoding first.
+    JSON document by the JSONPassthroughEncoder without decoding first.
 
     Blindly wrapping untrusted JSON strings using this could result in JSON
     injection attacks. Please be careful.
